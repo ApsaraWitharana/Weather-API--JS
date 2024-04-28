@@ -12,9 +12,48 @@ body{
 background-image: url('/assets/image/back\ image4.webp');
     background-size: auto;
     object-fit: cover;
+    /* Cover the image original */
     background-size: cover;
-        /* Cover the entire background */
-    
-       
-        background-repeat: no-repeat;
+    /* Cover the entire background */
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: #171717;
+    color: #fff;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.weather__search {
+    position: relative;
+}
+
+.weather__search i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #fff;
 }
