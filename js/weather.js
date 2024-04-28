@@ -25,6 +25,13 @@ document.querySelector(".weather__search").addEventListener('submit', e => {
     getWeather();
     // clear form
     search.value = ""
+    
+})
+
+let mouse = document.getElementById('weather__search')
+addEventListener('mouseover',function(){
+    // console.log('mouseover')
+    mouse.style.borderRadius = '20px'
 })
 
 // units
@@ -47,9 +54,9 @@ document.querySelector(".weather_unit_farenheit").addEventListener('click', () =
 })
 
 function convertTimeStamp(timestamp, timezone){
-     const convertTimezone = timezone / 3600; // convert seconds to hours 
+     const convertTimezone = timezone / ( 60 * 60); // convert seconds to hours 
 
-    const date = new Date(timestamp * 1000);
+    const date = new Date(timestamp * 1000 );
     
     const options = {
         weekday: "long",
