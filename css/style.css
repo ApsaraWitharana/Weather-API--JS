@@ -128,3 +128,26 @@ input::placeholder {
 .weather__card p {
     font-size: 14px;
 }
+
+/* set responcive */
+
+@media(max-width: 936px) {
+    .container {
+        width: 90%;
+    }
+
+    .weather__header {
+        flex-direction: column;
+    }
+
+    .weather__units {
+        margin-top: 1rem;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .weather__info {
+        grid-template-columns: none;
+    }
+}
