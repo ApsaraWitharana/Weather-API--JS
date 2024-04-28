@@ -16,10 +16,13 @@ background-image: url('/assets/image/back\ image4.webp');
     background-size: cover;
     /* Cover the entire background */
     background-repeat: no-repeat;
+    /* background: linear-gradient(45deg, #333 50%, #666 50%); */
 }
 
 .container {
-    background: #171717;
+    /* background: #a07171; */
+    /* To create a 3D effect for the background color */
+    background: rgba(255, 255, 255, 0.1);
     color: #fff;
     padding: 2rem;
     width: 40%;
