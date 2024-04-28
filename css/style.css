@@ -76,11 +76,13 @@ input::placeholder {
 .weather__body {
     text-align: center;
     margin-top: 3rem;
+    color:red;
 }
 
 .weather__datetime {
     margin-bottom: 2rem;
-    font-size: 14px;
+    font-size: 16px;
+    color: black;
 }
 
 .weather__forecast {
